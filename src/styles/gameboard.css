@@ -1,0 +1,5 @@
+.gameboard-flex {
+    display: flex;
+    flex-flow: column;
+    width: 100%; flex: 1;
+}
