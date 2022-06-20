@@ -9,6 +9,8 @@ import Doge from './Doge.jpg';
 import Chock from './Chock.jpg';
 import Bethoveen from './Bethoveen.jpg'
 import Lucky from './Luckys.jpg';
+import Hamster from './Hamster.jpg';
+import Racoon from './Racoon.jpg';
 
 
 const Gameboard = () =>{
@@ -21,7 +23,9 @@ const Gameboard = () =>{
          {name: "Doge",     img: Doge},
          {name: "Bethoveen", img: Bethoveen},
          {name: "Chock",    img: Chock},
-         {name: "Luckys",   img: Lucky}]
+         {name: "Luckys",   img: Lucky},
+         {name: "Hamster",  img: Hamster},
+         {name: "Racoon",  img: Racoon}]
     )
 
     const shuffleCards = () => {
