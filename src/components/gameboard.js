@@ -9,8 +9,7 @@ import Doge from './Doge.jpg';
 
 const Gameboard = () =>{
 
-
-    const [images, setImagesObject] = useState(
+    const [images, setImages] = useState(
         [{name: "Cheems",   img: Cheems}, 
          {name: "Queso",    img: Queso}, 
          {name: "Rocco",    img: Rocco}, 
@@ -18,17 +17,29 @@ const Gameboard = () =>{
          {name: "Doge",     img: Doge}]
     )
 
-    useEffect(() => {
+    const shuffleCards = () => {
+        let imagesArray = [...images];
+        for(let i = imagesArray.length-1; i > 0; i--){
+            const j = Math.floor(Math.random() * (i + 1));
+            [imagesArray[i], imagesArray[j]] = [imagesArray[j], imagesArray[i]];
+        }
+        setImages(imagesArray);
+    }
+
+   /* useEffect(() => {
         const cards = document.querySelectorAll(".card");
+
         cards.forEach(card => card.addEventListener("click", (e) => {
-            console.log(e.target);   
+            shuffleCards();
         }))
+
+
         return () => {
             cards.forEach(card => card.removeEventListener("click", (e) => {
                 console.log("stop click");   
             }))
         }
-    }, [])
+    }, [])*/
 
 
     return(
@@ -38,7 +49,7 @@ const Gameboard = () =>{
                     images.map(
                         function iterateImages(item, iterator){
                             return(
-                                <Card key={iterator.toString()} image = {item}/>
+                                <Card key={iterator.toString()} image = {item} shuffleCards = {shuffleCards}/>
                                 )
                             }
                     )
