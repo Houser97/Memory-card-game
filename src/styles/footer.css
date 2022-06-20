@@ -6,9 +6,9 @@ footer {
     background-color: rgb(67, 131, 210);
     font-family: 'Crimson Text', serif;
     gap: 8px;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(6, 6, 6);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .github-svg {
