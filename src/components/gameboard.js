@@ -1,11 +1,15 @@
 import '../styles/gameboard.css';
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import Card from './card';
 import Cheems from './cheems.jpg';
 import Queso from './Queso.jpg';
 import Rocco from './Cocco.jpg';
 import House from './House.jpg';
 import Doge from './Doge.jpg';
+import Chock from './Chock.jpg';
+import Bethoveen from './Bethoveen.jpg'
+import Lucky from './Luckys.jpg';
+
 
 const Gameboard = () =>{
 
@@ -14,7 +18,10 @@ const Gameboard = () =>{
          {name: "Queso",    img: Queso}, 
          {name: "Rocco",    img: Rocco}, 
          {name: "House",    img: House}, 
-         {name: "Doge",     img: Doge}]
+         {name: "Doge",     img: Doge},
+         {name: "Bethoveen", img: Bethoveen},
+         {name: "Chock",    img: Chock},
+         {name: "Luckys",   img: Lucky}]
     )
 
     const shuffleCards = () => {

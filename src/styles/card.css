@@ -17,6 +17,9 @@
     display: flex; flex-flow: column; flex: 1;
     align-items: center; justify-content: center;
     background-color: rgb(67, 131, 210);
+    color: white;
+    font-size: 26px; font-weight: 600;
+    border-top: 3px solid black;
 }
 
 .card-image-section .image{
