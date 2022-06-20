@@ -1,10 +1,16 @@
 import '../styles/card.css';
+import { useEffect } from 'react';
 
-const Card = () => {
+
+const Card = (props) => {
+    const {image} = props
+
     return(
         <div className="card">
-            <div className="card-image-section">Here goes image</div>
-            <div className="card-text-section"> Here goes text</div>
+            <div className="card-image-section">
+                <img className='image' src={image.img} alt={image.name}></img>
+            </div>
+            <div className="card-text-section">{image.name}</div>
         </div>
     )
 }
