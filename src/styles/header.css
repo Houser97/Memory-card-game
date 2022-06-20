@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 header {
     display: flex;
     width: 100%; height: 100px;
@@ -5,17 +6,16 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 30px;
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(253, 165, 49);
 }
 
 .title-page {
-    font-size: 36px;
-    color: rgb(255, 166, 0);
-    font-weight: 600;
+    font-size: 40px;
 }
 
 .score {
     display: flex;
     flex-flow: column; align-items: flex-start;
-    color: rgb(255, 166, 0);
-    font-weight: 600;
+    
 }
