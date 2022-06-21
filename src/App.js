@@ -8,9 +8,21 @@ function App() {
 
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [clickedCards, setClickedCards] = useState([]);
+
+  const checkIfBestScoreIsBeate = () => {
+    if(currentScore > bestScore) setBestScore(currentScore);
+  }
 
   const changeScore = (id) => {
-    console.log(id)
+    if(clickedCards.includes(id)){
+      checkIfBestScoreIsBeate();
+      setCurrentScore(0);
+      setClickedCards([]);
+    } else {
+      setCurrentScore(currentScore + 1);
+      setClickedCards([...clickedCards,id]);
+    }
   }
 
   return (
