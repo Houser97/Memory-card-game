@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Memory-card-game/static/css/main.0c5e33e3.css",
+    "main.js": "/Memory-card-game/static/js/main.2a9cb3e8.js",
+    "static/media/Bethoveen.jpg": "/Memory-card-game/static/media/Bethoveen.fe57f945ec75bca2c3e1.jpg",
+    "static/media/Racoon.jpg": "/Memory-card-game/static/media/Racoon.dc83bca329fabd55b251.jpg",
+    "static/media/House.jpg": "/Memory-card-game/static/media/House.aa44e8300add295ec677.jpg",
+    "static/media/Luckys.jpg": "/Memory-card-game/static/media/Luckys.ce8e58fa804d59a26e54.jpg",
+    "static/media/Queso.jpg": "/Memory-card-game/static/media/Queso.0a5803dd48eb5de65688.jpg",
+    "static/media/Cocco.jpg": "/Memory-card-game/static/media/Cocco.d870036b69c692ec0b2c.jpg",
+    "static/media/Chock.jpg": "/Memory-card-game/static/media/Chock.fcdc21e8ec1569e96645.jpg",
+    "static/media/cheems.jpg": "/Memory-card-game/static/media/cheems.b996d29c0193520855e9.jpg",
+    "static/media/Hamster.jpg": "/Memory-card-game/static/media/Hamster.e7f67598b51caf02a9c5.jpg",
+    "static/media/Doge.jpg": "/Memory-card-game/static/media/Doge.dfd4f47ff7e90fa68835.jpg",
+    "index.html": "/Memory-card-game/index.html",
+    "main.0c5e33e3.css.map": "/Memory-card-game/static/css/main.0c5e33e3.css.map",
+    "main.2a9cb3e8.js.map": "/Memory-card-game/static/js/main.2a9cb3e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c5e33e3.css",
+    "static/js/main.2a9cb3e8.js"
+  ]
+}
