@@ -9,10 +9,14 @@ function App() {
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
+  const changeScore = (id) => {
+    console.log(id)
+  }
+
   return (
     <div className="App">
       <Header currentScore = {currentScore} bestScore = {bestScore}/>
-      <Gameboard />
+      <Gameboard changeScore = {changeScore}/>
       <Footer />
     </div>
   );

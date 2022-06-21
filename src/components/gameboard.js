@@ -13,28 +13,32 @@ import Hamster from './Hamster.jpg';
 import Racoon from './Racoon.jpg';
 
 
-const Gameboard = () =>{
+const Gameboard = (props) =>{
 
     const [images, setImages] = useState(
-        [{name: "Cheems",   img: Cheems}, 
-         {name: "Queso",    img: Queso}, 
-         {name: "Rocco",    img: Rocco}, 
-         {name: "House",    img: House}, 
-         {name: "Doge",     img: Doge},
-         {name: "Bethoveen", img: Bethoveen},
-         {name: "Chock",    img: Chock},
-         {name: "Luckys",   img: Lucky},
-         {name: "Hamster",  img: Hamster},
-         {name: "Racoon",  img: Racoon}]
+        [{name: "Cheems",   img: Cheems,    id: 0}, 
+         {name: "Queso",    img: Queso,     id: 1}, 
+         {name: "Rocco",    img: Rocco,     id: 2}, 
+         {name: "House",    img: House,     id: 3}, 
+         {name: "Doge",     img: Doge,      id: 4},
+         {name: "Bethoveen", img: Bethoveen, id: 5},
+         {name: "Chock",    img: Chock,     id: 6},
+         {name: "Luckys",   img: Lucky,     id: 7},
+         {name: "Hamster",  img: Hamster,   id: 8},
+         {name: "Racoon",  img: Racoon,     id: 9}]
     )
 
-    const shuffleCards = () => {
-        let imagesArray = [...images];
+    const changeScoreApp = props.changeScore;
+
+    const shuffleCards = (e) => {
+        changeScoreApp(e.target.id);
+        
+        setTimeout(()=>{let imagesArray = [...images];
         for(let i = imagesArray.length-1; i > 0; i--){
             const j = Math.floor(Math.random() * (i + 1));
             [imagesArray[i], imagesArray[j]] = [imagesArray[j], imagesArray[i]];
         }
-        setImages(imagesArray);
+        setImages(imagesArray);}, 100)
     }
 
    /* useEffect(() => {
@@ -60,7 +64,7 @@ const Gameboard = () =>{
                     images.map(
                         function iterateImages(item, iterator){
                             return(
-                                <Card key={iterator.toString()} image = {item} shuffleCards = {shuffleCards}/>
+                                <Card key={iterator.toString()} image = {item} shuffleCards = {shuffleCards} changeScore = {props.changeScore}/>
                                 )
                             }
                     )
