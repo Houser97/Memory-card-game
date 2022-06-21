@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.DIV-winner {
+    display: flex; flex-flow: column;
+    align-items: center; justify-content: center;
+    position: absolute;
+    width: 100%; min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    opacity: 1;
+}
+
+.DIV-winner .winner {
+    color: rgb(253, 165, 49);
+    font-size: 120px;
+}
+
+.DIV-winner .new-game {
+    background-color: rgb(67, 131, 210);
+    font-size: 70px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+}
+  
