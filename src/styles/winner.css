@@ -5,13 +5,13 @@
 }
 
 .DIV-winner {
-    display: flex; flex-flow: column;
+    display: none; flex-flow: column;
     align-items: center; justify-content: center;
     position: absolute;
     width: 100%; min-height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
-    opacity: 1;
+    opacity: 0;
 }
 
 .DIV-winner .winner {

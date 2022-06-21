@@ -1,7 +1,16 @@
 .App {
   display: flex;
   flex-flow: column;
+  position: relative;
   height: 100%;
   flex: 1;
   width: 100%; 
 }
+
+.fullHeight {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  flex: 1;
+}
+
