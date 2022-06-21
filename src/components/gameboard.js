@@ -21,7 +21,7 @@ const Gameboard = (props) =>{
          {name: "Rocco",    img: Rocco,     id: 2}, 
          {name: "House",    img: House,     id: 3}, 
          {name: "Doge",     img: Doge,      id: 4},
-         {name: "Bethoveen", img: Bethoveen, id: 5},
+         {name: "Beethoven", img: Bethoveen, id: 5},
          {name: "Chock",    img: Chock,     id: 6},
          {name: "Luckys",   img: Lucky,     id: 7},
          {name: "Hamster",  img: Hamster,   id: 8},
